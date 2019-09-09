@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 
    function average(){
-      let subject_points = score_indicate();
+      let subject_points = score_indicate()
     // さらにこのような記述をすることで、「合計点：」となっている右の部分に合計点が出力される
     let sum = subject_points[0];
     sum = sum + subject_points[1];
@@ -62,12 +62,24 @@ $(document).ready(function(){
 
 
   function get_pass_or_failure(){
- let subjects_points =  [Number($('#national_language').val()),
+      let subjects_points =
+                      [Number($('#national_language').val()),
                        Number($('#english').val()),
                        Number($('#mathematics').val()),
                        Number($('#science').val()),
                        Number($('#society').val())
                        ];
+
+
+
+    // let subject_points = [Number($('#national_language').val()),
+    //                       Number($('#english').val()),
+    //                       Number($('#mathematics').val()),
+    //                       Number($('#science').val()),
+    //                       Number($('#society').val())
+    //                       ];
+
+    // let pass;
 
 
 
@@ -78,7 +90,7 @@ $(document).ready(function(){
 
 
 
-    if(subject_points[0] >= 60 && subject_points[1] >= 60 && subject_points[2] >= 60 && subject_points[3] && subject_points[4] >= 60 ){
+    if(subjects_points[0] >= 60 && subjects_points[1] >= 60 && subjects_points[2] >= 60 && subjects_points[3] && subjects_points[4] >= 60 ){
 
           let pass;
           pass = "合格";
