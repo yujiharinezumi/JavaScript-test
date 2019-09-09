@@ -95,12 +95,13 @@ $(document).ready(function(){
           let pass;
           pass = "合格";
           $('#judge').text(pass);
-    }else{
-      pass = "不合格";
-      $('#judge').text(pass);
-    }
-    return  pass;
-  };
+           return pass;
+          }else{
+          pass = "不合格";
+          $('#judge').text(pass);
+        }
+        return  pass;
+      };
 
 
   function judgement(){
