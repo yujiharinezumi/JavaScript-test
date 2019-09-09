@@ -62,17 +62,12 @@ $(document).ready(function(){
 
 
   function get_pass_or_failure(){
- let subjects_points = score_indicate()
-
-
-    // let subject_points = [Number($('#national_language').val()),
-    //                       Number($('#english').val()),
-    //                       Number($('#mathematics').val()),
-    //                       Number($('#science').val()),
-    //                       Number($('#society').val())
-    //                       ];
-
-    let pass;
+ let subjects_points =  [Number($('#national_language').val()),
+                       Number($('#english').val()),
+                       Number($('#mathematics').val()),
+                       Number($('#science').val()),
+                       Number($('#society').val())
+                       ];
 
 
 
